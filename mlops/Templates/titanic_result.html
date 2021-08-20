@@ -1,0 +1,83 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>MLOPS | Startup </title>
+{% include 'css.html' %}
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Result</title>
+
+    <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    {% include 'nav.html' %}
+
+    <div>
+        <!-- Left Sidebar -->
+        {% include 'leftsidebar.html' %}
+        <!-- #END# Left Sidebar -->
+
+        <!-- Right Sidebar -->
+        {% include 'rightsidebar.html' %}
+        <!-- #END# Right Sidebar -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <ul class="breadcrumb breadcrumb-style ">
+                            <li class="breadcrumb-item">
+                                <h4 class="page-title">Logistical Regression </h4>
+                            </li>
+                            <li class="breadcrumb-item bcrumb-1">
+                                <a href="../../index.html">
+                                    <i class="fas fa-home"></i> Titanic Data</a>
+                            </li>
+                            <!-- <li class="breadcrumb-item bcrumb-2">
+                                <a href="#" onClick="return false;">Tables</a>
+                            </li>
+                            <li class="breadcrumb-item active">Export Tables</li> -->
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- <h2>Result prediction Using Multi Linear Regression</h2>
+            {% if result == 'yes' %}
+            <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+                You will Survived!</h1> {% elif result == 'no' %}
+            <h1 style="color: rgb(212, 85, 85); font-weight: 900;">
+                </i> You will not survive!</h1> {% else %}
+            <h1 style="color: rgb(31, 15, 15); font-weight: 900;">ERROR</h1>
+            {% endif %} -->
+
+            <div class="results">
+
+
+                <span>{{result}}</span>
+
+
+            </div>
+
+            <a href="..">
+                <input type="submit" value="Go Back..">
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>MLOPS | Startup </title>
+    {% include 'css.html' %}
+</head>
+
+<body class="light">
+
+    {% include 'nav.html' %}
+
+    <div>
+        <!-- Left Sidebar -->
+        {% include 'leftsidebar.html' %}
+        <!-- #END# Left Sidebar -->
+
+        <!-- Right Sidebar -->
+        {% include 'rightsidebar.html' %}
+        <!-- #END# Right Sidebar -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <ul class="breadcrumb breadcrumb-style ">
+                            <li class="breadcrumb-item">
+                                <h4 class="page-title">Logistic Regression</h4>
+                            </li>
+                            <li class="breadcrumb-item bcrumb-1">
+                                <a href="../../index.html">
+                                    <i class="fas fa-home"></i> Titanic Survival Predictor</a>
+                            </li>
+                            <!-- <li class="breadcrumb-item bcrumb-2">
+                                <a href="#" onClick="return false;">Tables</a>
+                            </li>
+                            <li class="breadcrumb-item active">Export Tables</li> -->
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="card card-success">
+                    <div class="card-header">
+                        <h3 class="card-title">Logistic Regression -Titanic Survival Prediction</h3>
+                    </div>
+                    <div class="card-body">
+                        Machine Learning Logistic Linear Regression - Titanic Survival Prediction using custom Input
+                    </div>
+                    <div class="card-footer">
+                        Can a passenger with your given characteristics survive?
+                        <div class="ml-container">
+
+                            <form method="POST">
+                                {% csrf_token %}
+
+                                <p>Enter Passenger Class: </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.passenger_class }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <p>Enter Sex : </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.sex }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <p>Enter Age : </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.age }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <p>Enter Number of Sibling: </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.no_sibling }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <p>Enter Parch: </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.parch }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <p>Enter Fare Amount: </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.fare_amt }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <p>Enter Embarc C: </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.embarc_c }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+                                <p>Enter Embarc Q: </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.embarc_q }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+                                <p>Enter Embarc S: </p>
+                                <div class="wrap-input1 validate-input">
+                                    {{ form.embarc_s }}
+
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <div class="container-contact1-form-btn">
+                                    <input type="submit" class="btn btn-primary btn-lg" name="submit">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    {% include 'js.html' %}
+</body>

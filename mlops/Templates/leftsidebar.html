@@ -1,0 +1,53 @@
+{% load static %}
+
+
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <!-- Menu -->
+    <div class="menu">
+        <ul class="list">
+            <li class="sidebar-user-panel active">
+
+                <div class="profile-usertitle">
+                    <div class="sidebar-userpic-name">
+                        <Strong> Dealer </Strong> </div>
+                    <div class="profile-usertitle-job ">
+                        <h5> asdasdasd</h5>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="{% url 'startup_index_url'%}">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span> Multi Linear Regression </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'titanic_index_url'%}">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span> Logistic Regression </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'catdog_index_url'%}">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span> CNN </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'wine_index_url'%}">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span> Multi Class Classification</span>
+                </a>
+            </li>
+
+
+
+        </ul>
+    </div>
+    <!-- #Menu -->
+</aside>
+<!-- #END# Left Sidebar -->

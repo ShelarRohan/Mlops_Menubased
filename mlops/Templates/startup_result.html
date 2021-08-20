@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MLOPS | Startup-Result</title>
+
+    {% include 'css.html' %}
+</head>
+
+<body class="light">
+
+    {% include 'nav.html' %}
+
+    <div>
+        <!-- Left Sidebar -->
+        {% include 'leftsidebar.html' %}
+        <!-- #END# Left Sidebar -->
+
+        <!-- Right Sidebar -->
+        {% include 'rightsidebar.html' %}
+        <!-- #END# Right Sidebar -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <ul class="breadcrumb breadcrumb-style ">
+                            <li class="breadcrumb-item">
+                                <h4 class="page-title">Multi Linear Regression </h4>
+                            </li>
+                            <li class="breadcrumb-item bcrumb-1">
+                                <a href="../../index.html">
+                                    <i class="fas fa-home"></i> Startup Data</a>
+                            </li>
+                            <!-- <li class="breadcrumb-item bcrumb-2">
+                                <a href="#" onClick="return false;">Tables</a>
+                            </li>
+                            <li class="breadcrumb-item active">Export Tables</li> -->
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <h2>Result prediction Using Multi Linear Regression</h2>
+
+            <p style="color:blue;font-size:20;text-align: center;"><b>You will get profit:</b></p>
+            <div class="results">
+
+
+                <span>{{result}}</span>
+
+
+            </div>
+
+            <a href="..">
+                <input type="submit" value="Go Back..">
+            </a>
+
+</body>
+{% include 'js.html' %}
+
+</html>

@@ -1,0 +1,40 @@
+{% load static %}
+
+
+<!-- Plugins Js -->
+<script src="{% static 'assets/js/app.min.js' %}"></script>
+<script src="{% static 'assets/js/chart.min.js' %}"></script>
+<!-- Custom Js -->
+<script src="{% static 'assets/js/admin.js' %}"></script>
+<script src="{% static 'assets/js/pages/index.js' %}"></script>
+<script src="{% static 'assets/js/pages/charts/jquery-knob.js' %}"></script>
+<script src="{% static 'assets/js/pages/sparkline/sparkline-data.js' %}"></script>
+<script src="{% static 'assets/js/pages/medias/carousel.js' %}"></script>
+
+<!-- Table JS  -->
+<script src="{% static 'assets/js/table.min.js' %}"></script>
+<!-- Custom Js -->
+<script src="{% static 'assets/js/bundles/export-tables/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'assets/js/bundles/export-tables/buttons.flash.min.js' %}"></script>
+<script src="{% static 'assets/js/bundles/export-tables/jszip.min.js' %}"></script>
+<script src="{% static 'assets/js/bundles/export-tables/pdfmake.min.js' %}"></script>
+<script src="{% static 'assets/js/bundles/export-tables/vfs_fonts.js' %}"></script>
+<script src="{% static 'assets/js/bundles/export-tables/buttons.html5.min.js' %}"></script>
+<script src="{% static 'assets/js/bundles/export-tables/buttons.print.min.js' %}"></script>
+<script src="{% static 'assets/js/pages/tables/jquery-datatable.js' %}"></script>
+<!-- Demo Js -->
+
+
+<!-- Extra page Js -->
+<script src="{% static 'assets/js/pages/examples/pages.js' %}"></script>
+
+<script src="{% static 'assets/js/bundles/lightgallery/dist/js/lightgallery-all.js' %}"></script>
+<!-- Custom Js -->
+<script src="{% static 'assets/js/pages/medias/image-gallery.js' %}"></script>
+<script>
+    window.setTimeout(function() {
+        $(".alertmsg").fadeTo(500, 0).slideUp(500, function() {
+            $(this).remove();
+        });
+    }, 2000);
+</script>

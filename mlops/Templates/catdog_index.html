@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>MLOPS | Startup </title>
+    {% include 'css.html' %}
+</head>
+
+<body class="light">
+
+    {% include 'nav.html' %}
+
+    <div>
+        <!-- Left Sidebar -->
+        {% include 'leftsidebar.html' %}
+        <!-- #END# Left Sidebar -->
+
+        <!-- Right Sidebar -->
+        {% include 'rightsidebar.html' %}
+        <!-- #END# Right Sidebar -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <ul class="breadcrumb breadcrumb-style ">
+                            <li class="breadcrumb-item">
+                                <h4 class="page-title">CNN</h4>
+                            </li>
+                            <li class="breadcrumb-item bcrumb-1">
+                                <a href="../../index.html">
+                                    <i class="fas fa-home"></i> CatDog Data</a>
+                            </li>
+                            <!-- <li class="breadcrumb-item bcrumb-2">
+                                <a href="#" onClick="return false;">Tables</a>
+                            </li>
+                            <li class="breadcrumb-item active">Export Tables</li> -->
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="card card-success">
+                    <div class="card-header">
+                        <h3 class="card-title"> CNN- Cat-Dog Classification</h3>
+                    </div>
+                    <div class="card-body">
+                        Machine Learning CNN - Cat Dog Classification
+                    </div>
+                    <div class="card-footer">
+                        Fill up the form
+                        <div class="ml-container">
+
+                            <form id="form" class="contact1-form validate-form" method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <p>Enter Number of Study Hours </p>
+                                <!-- <input type="text" name="comment"/> -->
+                                <label for="img">Select image:</label>
+                                <!-- <input type="file" name= "img" id="img" name="img"> -->
+                                <!-- <div class="wrap-input1 validate-input" > -->
+                                {{ form.image }}
+                                <!-- </div> -->
+                                <br/>
+
+                                <input type="submit" class="btn-info" value="catdog_predict">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    {% include 'js.html' %}
+</body>
